@@ -1,0 +1,22 @@
+name: PushToGhPages
+
+on:
+  push:
+    paths:
+      - '/'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.13.x
+          cache: npm
+      - name: Build ssg blog
+        run: npm run dev
+      - name: Upload ssg blog
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: blog-build
+          path: build/
