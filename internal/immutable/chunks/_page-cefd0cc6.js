@@ -1,1 +1,0 @@
-const s=!0,t=async({fetch:r,params:e,url:l})=>{const o=await r("/"+e.slug+".md",{referrerPolicy:"same-origin"});return{slug:e.slug,mdslug:e.slug+".md",post:o}},n=Object.freeze(Object.defineProperty({__proto__:null,load:t,prerender:!0},Symbol.toStringTag,{value:"Module"}));export{n as _,t as l,s as p};
