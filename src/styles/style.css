@@ -1,5 +1,43 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    --text: #2b2b2b;
+    --background: #cccace;
+    --primary: #0f5751;
+    --secondary: #08c48f;
+    --accent: #0088ff;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #d4d4d4;
+    --background: #323034;
+    --primary: #A6F0EA;
+    --secondary: #3cf7c2;
+    --accent: #0088ff;
+  }
+}
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	background-color: #323034;
-	color: #d4d4d4;
+	background-color: var(--background);
+	color: var(--text);
+	margin: 0;
+}
+
+header {
+	margin: auto;
+	width: 90%;
+}
+
+main {
+	margin: 8px
+}
+
+a {
+	color: var(--primary);
+	transition: color 0.5s 0s;
+	text-decoration: none;
+}
+a:hover {
+	color: var(--secondary);
+	text-decoration: underline var(--secondary);
 }
