@@ -29,7 +29,8 @@ header {
 }
 
 main {
-	margin: 8px
+	width: 80%;
+	margin: 0 auto; 
 }
 
 a {

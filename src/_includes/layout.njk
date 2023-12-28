@@ -16,12 +16,45 @@
 	</main>
   </body>
   <script>
-	const screenWidth = window.screen.width
-	const numberOfIcons = screenWidth / {{size}} - 4 
-	const header = document.getElementById('bannerContainer')
-	for (let i = 0; i < numberOfIcons; i++) {
-		header.insertAdjacentHTML('beforeend', ` {{ banner (width='64', height='30') }} `)
-}	
+	
+  	const header = document.getElementById('bannerContainer')
+	let bannerAddIcons = (sw, me, target) => {
+		const numberOfIcons = sw / {{size}} - me 
+		for (let i = 0; i < numberOfIcons; i++) {
+			header.insertAdjacentHTML('beforeend', ` {{ banner (width='64', height='30') }} `)
+		}
+	}
+
+	let screenWidth = window.screen.width 
+	bannerAddIcons(screenWidth, 4, header)
+
+	let update = () => {
+		console.log("resize!")
+
+		let screenWidth = window.screen.width
+		while(header.firstChild) {
+			header.removeChild(header.firstChild)
+		}
+		if (screenWidth < 950) {
+			bannerAddIcons(screenWidth, 2)
+		}
+		if (screenWidth > 950) {
+			bannerAddIcons(screenWidth, 4)
+		}
+	}
+	const triggerTimes = []
+
+	let timeout = () => {
+		if (Date.now() - triggerTimes.slice(-1) > 70) {
+			update()
+		}
+		triggerTimes.push(Date.now())
+		if (triggerTimes.length > 16) {
+			triggerTimes.splice(triggerTimes.length - 15, 15)
+		}
+
+	}
+	window.onresize = timeout;
   </script>
 
 </html>

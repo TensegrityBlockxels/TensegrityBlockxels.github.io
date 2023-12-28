@@ -1,5 +1,14 @@
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 module.exports = function(eleventyConfig) {
+	eleventyConfig.addPlugin(pluginRss);
+
+	eleventyConfig.addFilter("excerpt", (post) => {
+		const content = post.replace(/(<([^>]+)>)/gi, "");
+		return content.substr(0, content.lastIndexOf(" ", 200)) + "...";
+	});
+
 	eleventyConfig.addPassthroughCopy("src/styles/*.css");
+
 
 	eleventyConfig.setBrowserSyncConfig({
 		middleware: [
