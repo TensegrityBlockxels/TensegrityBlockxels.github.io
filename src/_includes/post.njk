@@ -12,6 +12,9 @@
 	</header>
 	<main>
 		{{ content | safe }}
+		{% for tag in tags %}
+			{{bubble (content=tag)}}	
+		{% endfor %}
 	</main>
   </body>
 	{% include "banner.html" %}

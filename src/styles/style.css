@@ -42,3 +42,11 @@ a:hover {
 	color: var(--secondary);
 	text-decoration: underline var(--secondary);
 }
+.bubble {
+	padding: 10px 2rem 10px;
+	width: min-content;
+	background-color: var(--primary);
+	color: var(--background);
+	border-radius: 16px;
+}
+
