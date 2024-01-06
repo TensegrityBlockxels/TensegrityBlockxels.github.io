@@ -11,6 +11,7 @@
   	<header id="bannerContainer">
 	</header>
 	<main>
+		<h1>{{ title }}</h1>
 		{{ content | safe }}
 		{% for tag in tags %}
 			{{bubble (content=tag)}}	

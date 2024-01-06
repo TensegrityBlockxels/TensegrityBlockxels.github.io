@@ -44,13 +44,12 @@ a {
 	color: var(--primary);
 	transition: color 0.5s 0s;
 	text-decoration: none;
-	text-underline-offset: 0.5ch;
+	text-underline-offset: 8px;
 }
 a:hover {
 	color: var(--secondary);
 	text-decoration: underline var(--secondary);
 }
-
 .bubble {
 	padding: 10px 2rem 10px;
 	width: min-content;
@@ -60,34 +59,14 @@ a:hover {
 }
 
 .card {
-	pointer-events: none;
-	border: solid;
-	border-color: var(--primary);
-	background-color: #403e42;
+	background-color: #66626a;
 	color: white;
 	width: 20rem;
 	height: 15rem;
 	border-radius: var(--br);
 	padding: 0.5rem;
-	transition: border-color 0.5s 0s;
-}
-
-.card:hover {
-	border-color: var(--secondary);
 }
 
 .card > h2 {
-	pointer-events: auto;
 	margin-top: 10rem;
-}
-.hex {
-	display: block;
-	float: right;
-	position: relative;
-	width: 20rem;
-	height: 20rem;
-	background-color: var(--primary);
-	display: inline-block;
-	clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
-	transform: rotate(35deg);
 }

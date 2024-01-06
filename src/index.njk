@@ -1,14 +1,19 @@
 ---
 layout: layout.njk
 ---
+{%- from 'tag.card.njk' import card -%}
 <h1>Welcome!</h1>
+<div class="hex"></div>
 <p>This is my blog to share my thoughts and stuff.</p>
 <ul>
 {%- for post in collections.blog -%}
-	<li><a href="{{ post.url }}">{{post.data.title}}</a></li>
+	<li>{{card (url=post.url, title=post.data.title, description=post.templateContent)}}</li>
 {%- endfor -%}
 </ul>
+
+
 <h3>Other places you can find me.</h3>
 <ul>
+
 	<li><a href="https://github.com/TensegrityBlockxels">Github</a></li>
 </ul>

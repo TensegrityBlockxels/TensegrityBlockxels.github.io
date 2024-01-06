@@ -1,0 +1,6 @@
+{%- macro card(url, title, description) -%}
+<div class="card">
+	<h2><a href="{{ url }}">{{title}}</a></h2>
+	<span>{{ description | excerpt }}</span>
+</div>
+{%- endmacro -%}
