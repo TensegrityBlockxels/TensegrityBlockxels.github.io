@@ -81,7 +81,6 @@ a:hover {
 	margin-top: 10rem;
 }
 .hex {
-	display: block;
 	float: right;
 	position: relative;
 	width: 20rem;
@@ -91,3 +90,28 @@ a:hover {
 	clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
 	transform: rotate(35deg);
 }
+
+.star {
+	fill: var(--secondary);
+	width: 25rem;
+	height: 25rem;
+	position: relative;
+	top: 4rem;
+	left: 1rem;
+	overflow: visible;
+	transform: rotate(30deg);
+}
+
+.subscribe > h2 > a{
+	float: right;
+	position: relative;
+	right: 14rem;
+	top: 9rem;
+	z-index: 1;
+	color: var(--background);
+}
+.subscribe > h2 > a:hover{
+	color: var(--accent);
+	text-decoration: underline var(--accent);
+}
+

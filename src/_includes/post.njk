@@ -12,6 +12,7 @@
 	</header>
 	<main>
 		<h1>{{ title }}</h1>
+		<h3>{{ page.date.toUTCString().replace('GMT', 'UTC') }}</h3>
 		{{ content | safe }}
 		{% for tag in tags %}
 			{{bubble (content=tag)}}	

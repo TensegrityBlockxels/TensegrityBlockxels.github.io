@@ -2,8 +2,14 @@
 layout: layout.njk
 ---
 {%- from 'tag.card.njk' import card -%}
+{%- from 'tag.star.njk' import star -%}
 <h1>Welcome!</h1>
-<div class="hex"></div>
+<div class="subscribe">
+	<h2><a href="/subscribe/">Subscribe</a></h2>
+	<div class="hex">
+		{{star()}}
+	</div>
+</div>
 <p>This is my blog to share my thoughts and stuff.</p>
 <ul>
 {%- for post in collections.blog -%}
