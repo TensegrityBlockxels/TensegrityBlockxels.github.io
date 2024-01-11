@@ -1,0 +1,20 @@
+<{%- from 'tag.card.njk' import card -%}
+script defer>
+	let projectsDiv = document.getElementById('projects')
+
+	const response = fetch('https://api.github.com/users/TensegrityBlockxels/repos').then(response => response.json()).then(data => {
+		console.log(data)
+		for (const [key, value] of Object.entries(data)) {
+		  const project = value
+		  console.log(project)
+		  let projectTemplate = `<li>{{card (url="urlx", title="namex", description="descriptionx")}}</li>`
+		  projectTemplate = projectTemplate.replace("urlx", project.url)
+		  projectTemplate = projectTemplate.replace("namex", project.name)
+		  projectTemplate = projectTemplate.replace("descriptionx", project.description)
+
+		  projectsDiv.insertAdjacentHTML('beforeend', projectTemplate)
+
+		}
+	})
+</script>
+

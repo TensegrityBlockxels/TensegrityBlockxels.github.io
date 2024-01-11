@@ -84,6 +84,10 @@ a:hover {
 	border-radius: var(--br);
 	padding: 0.5rem;
 	transition: border-color 0.5s 0s;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin-top: 1rem;
 }
 
 .card:hover {
@@ -93,7 +97,9 @@ a:hover {
 .card > h2 {
 	pointer-events: auto;
 	margin-top: 10rem;
+	font-size: 1.3rem;
 }
+
 .hex {
 	float: right;
 	position: relative;
