@@ -1,0 +1,137 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    --text: #2b2b2b;
+    --background: #cccace;
+    --primary: #0f5751;
+    --secondary: #08c48f;
+    --accent: #0088ff;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #d4d4d4;
+    --background: #323034;
+    --primary: #A6F0EA;
+    --secondary: #3cf7c2;
+    --accent: #0088ff;
+  }
+}
+:root {
+	--br: 16px;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: var(--background);
+	color: var(--text);
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+header {
+	margin: auto;
+	width: 90%;
+}
+
+main {
+	width: 80%;
+	margin: 0 auto; 
+}
+
+main.post {
+	width: auto;
+}
+
+article {
+	max-width: 60%;
+	margin: 0 auto; 
+}
+
+p {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+a {
+	color: var(--primary);
+	transition: color 0.5s 0s;
+	text-decoration: none;
+	text-underline-offset: 0.5ch;
+}
+a:hover {
+	color: var(--secondary);
+	text-decoration: underline var(--secondary);
+}
+
+.bubble {
+	padding: 10px 2rem 10px;
+	width: min-content;
+	background-color: var(--primary);
+	color: var(--background);
+	border-radius: var(--br);
+}
+
+.card {
+	pointer-events: none;
+	border: solid;
+	border-color: var(--primary);
+	background-color: #403e42;
+	color: white;
+	width: 20rem;
+	height: 15rem;
+	border-radius: var(--br);
+	padding: 0.5rem;
+	transition: border-color 0.5s 0s;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin-top: 1rem;
+}
+
+.card:hover {
+	border-color: var(--secondary);
+}
+
+.card > h2 {
+	pointer-events: auto;
+	margin-top: 10rem;
+	font-size: 1.3rem;
+}
+
+.hex {
+	float: right;
+	position: relative;
+	width: 20rem;
+	height: 20rem;
+	background-color: var(--primary);
+	display: inline-block;
+	clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+	transform: rotate(35deg);
+}
+
+.star {
+	fill: var(--secondary);
+	width: 25rem;
+	height: 25rem;
+	position: relative;
+	top: 4rem;
+	left: 1rem;
+	overflow: visible;
+	transform: rotate(30deg);
+}
+
+.subscribe > h2 > a{
+	float: right;
+	position: relative;
+	right: 14rem;
+	top: 9rem;
+	z-index: 1;
+	color: var(--background);
+}
+.subscribe > h2 > a:hover{
+	color: var(--accent);
+	text-decoration: underline var(--accent);
+}
+

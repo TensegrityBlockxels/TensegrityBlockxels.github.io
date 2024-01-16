@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://tensegrityblockxels.github.io/">
+  <title>My Blog</title>
+  <subtitle>This is my blog to share my thoughts and stuff.</subtitle>
+  <link href="https://tensegrityblockxels.github.io/feed.xml" rel="self"/>
+  <link href="https://tensegrityblockxels.github.io/"/>
+  <updated>2024-01-16T15:53:35Z</updated>
+  <id>https://tensegrityblockxels.github.io/</id>
+  <author>
+    <name>TensegrityBlockxels</name>
+    <email>103687791+TensegrityBlockxels@users.noreply.github.com</email>
+  </author>
+  <entry>
+    <title>Test of blog</title>
+    <link href="https://tensegrityblockxels.github.io/blog/post-1"/>
+    <updated>2024-01-16T15:53:35Z</updated>
+    <id>https://tensegrityblockxels.github.io/blog/post-1</id>
+    <content xml:lang="en" type="html">This is post 1..
+</content>
+  </entry>
+</feed>

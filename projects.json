@@ -1,0 +1,14 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "My Blog",
+  "language": "en",
+  "home_page_url": "https://tensegrityblockxels.github.io/",
+  "feed_url": "https://tensegrityblockxels.github.io/projects.json",
+  "description": "This is my blog to share my thoughts and stuff.",
+  "author": {
+    "name": "TensegrityBlockxels",
+    "url": ""
+  },
+  "items": [
+  ]
+}
