@@ -4,7 +4,7 @@
   <subtitle>This is my blog to share my thoughts and stuff.</subtitle>
   <link href="https://tensegrityblockxels.github.io/feed.xml" rel="self"/>
   <link href="https://tensegrityblockxels.github.io/"/>
-  <updated>2024-01-16T15:53:35Z</updated>
+  <updated>2024-01-16T16:00:25Z</updated>
   <id>https://tensegrityblockxels.github.io/</id>
   <author>
     <name>TensegrityBlockxels</name>
@@ -12,9 +12,9 @@
   </author>
   <entry>
     <title>Test of blog</title>
-    <link href="https://tensegrityblockxels.github.io/blog/post-1"/>
-    <updated>2024-01-16T15:53:35Z</updated>
-    <id>https://tensegrityblockxels.github.io/blog/post-1</id>
+    <link href="https://tensegrityblockxels.github.io/blog/post-1.html"/>
+    <updated>2024-01-16T16:00:25Z</updated>
+    <id>https://tensegrityblockxels.github.io/blog/post-1.html</id>
     <content xml:lang="en" type="html">This is post 1..
 </content>
   </entry>

@@ -11,12 +11,12 @@
   },
   "items": [
     {
-      "id": "https://tensegrityblockxels.github.io/blog/post-1",
-      "url": "https://tensegrityblockxels.github.io/blog/post-1",
+      "id": "https://tensegrityblockxels.github.io/blog/post-1.html",
+      "url": "https://tensegrityblockxels.github.io/blog/post-1.html",
       "title": "Test of blog",
       "content_html": This is post 1..
 ,
-      "date_published": "2024-01-16T15:53:35Z"
+      "date_published": "2024-01-16T16:00:25Z"
     }
     
   ]
