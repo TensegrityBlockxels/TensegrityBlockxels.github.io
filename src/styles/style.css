@@ -50,6 +50,7 @@ article {
 }
 
 p {
+	display: inline-block;
 	font-size: 18px;
 	line-height: 24px;
 }
@@ -65,7 +66,9 @@ a:hover {
 	text-decoration: underline var(--secondary);
 }
 
-.bubble {
+.pill {
+	display: inline;
+	/*margin-top: 1rem;*/
 	padding: 10px 2rem 10px;
 	width: min-content;
 	background-color: var(--primary);
@@ -125,7 +128,7 @@ a:hover {
 .subscribe > h2 > a{
 	float: right;
 	position: relative;
-	right: 14rem;
+	right: max(20%, 7rem);
 	top: 9rem;
 	z-index: 1;
 	color: var(--background);

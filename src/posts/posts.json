@@ -1,4 +1,4 @@
 {
 	"layout": "post.njk",
-	"tags": "blog"
+	"permalink": "{{tags[0]}}/{{page.fileSlug}}"
 }

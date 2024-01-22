@@ -1,5 +1,5 @@
 {%- from 'tag.banner.njk' import banner -%}
-{%- from 'tag.bubble.njk' import bubble -%}
+{%- from 'tag.pill.njk' import pill -%}
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -15,9 +15,11 @@
 			<h1>{{ title }}</h1>
 			<h3>{{ page.date.toUTCString().replace('GMT', 'UTC') }}</h3>
 			{{ content | safe }}
-			{% for tag in tags %}
-				{{bubble (content=tag)}}	
-			{% endfor %}
+			<div class="tags">
+				{% for tag in tags %}
+					{{pill (content=tag)}}	
+				{% endfor %}
+			</div>
 		</article>
 	</main>
   </body>
