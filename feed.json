@@ -11,12 +11,68 @@
   },
   "items": [
     {
-      "id": "https://tensegrityblockxels.github.io/blog/post-1.html",
-      "url": "https://tensegrityblockxels.github.io/blog/post-1.html",
-      "title": "Test of blog",
-      "content_html": This is post 1..
+      "id": "https://tensegrityblockxels.github.io/blog/starship-ift-2",
+      "url": "https://tensegrityblockxels.github.io/blog/starship-ift-2",
+      "title": "Starship IFT 2",
+      "content_html": A cottage industry around documenting the happenings in Starbase has sprung up, with channels all over the world broadcasting the Starship IFT-2 live:
+
+NASASpaceflight
+SENKRECHTSTARTER
+AstroTim
+SpaceOrbit
+UFOTINIK
+HugoUniquement
+UzayCagindaYolculuk
+劳伦斯玩推特(海派新闻秀)
+link4universe
+PassioneAstronomia
+ControldeMision
+
+Launch summary
+
+All engines functional
+No debris or damage to launch pad
+Stage separation achieved
+Flight termination system stopped the second stage before it went into orbit
+
+Thoughts
+It&#39;s pretty crazy that people complain about the termination of the booster, done by the flight termination system or not, when before SpaceX, all rockets were doomed to fall into the ocean or explode. Only after they proved reusability that people started to act like this, which is ridiculous because they are using this new paradigm as a base to attack the company and it&#39;s status as the GOAT¹ of spaceflight.
+¹. Greatest Of All Time
+SpaceX has inadvertently created the expectations and goal posts that it&#39;s detractors are using to bash it.
 ,
-      "date_published": "2024-01-16T16:00:25Z"
+      "date_published": "2024-01-23T20:23:35Z"
+    }
+    ,
+    {
+      "id": "https://tensegrityblockxels.github.io/blog/on-blockchains",
+      "url": "https://tensegrityblockxels.github.io/blog/on-blockchains",
+      "title": "On blockchains",
+      "content_html": After doing research for a project, I came across the Byzantine Generals problem, permission vs permissionless networks (which really took me back to the cryptocurrency boom of 2021) and among other things, I realized that blockchains are a technical solution to the social problem of trust. My project, then, is based on federated design, similar to ActivityPub. The protocol will have heuristics for determining good or bad behavior of linked servers, If good, the admin will receive a recommendation to assign trust to that server. This will help sort out browsing systems for end users.
+,
+      "date_published": "2024-01-23T20:23:35Z"
+    }
+    ,
+    {
+      "id": "https://tensegrityblockxels.github.io/blog/antarctica-colonization-vs-space-colonization",
+      "url": "https://tensegrityblockxels.github.io/blog/antarctica-colonization-vs-space-colonization",
+      "title": "Antarctica colonization vs Space colonization",
+      "content_html": Many make the point that, given the overall disinterest in colonizing the Antartic, space colonization is not going to be as prominent as envisioned. However consider that:
+
+Antarctica, by the time that colonization became an option, was already understood as a delicate ecosystem, and that any disruption there had negative implications for the global climate.
+In the UN, it was decided that it was the reserved patrimony of humankind.
+The land didn&#39;t have any economic potential.
+
+,
+      "date_published": "2024-01-23T20:23:35Z"
+    }
+    ,
+    {
+      "id": "https://tensegrityblockxels.github.io/blog/a-now-stable-blog",
+      "url": "https://tensegrityblockxels.github.io/blog/a-now-stable-blog",
+      "title": "A now stable blog",
+      "content_html": After many attempts with Svelte and Astro, I finally settled for a blog made with eleventyjs.
+,
+      "date_published": "2024-01-23T20:23:35Z"
     }
     
   ]

@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Test of blog</title>
+	<title>Starship IFT 2</title>
 	<link rel="stylesheet" href="/styles/style.css"/>
   </head>
   <body>
@@ -10,13 +10,41 @@
 	</header>
 	<main class="post">
 		<article>
-			<h1>Test of blog</h1>
-			<h3>Tue, 16 Jan 2024 16:00:25 UTC</h3>
-			<p>This is post 1..</p>
+			<h1>Starship IFT 2</h1>
+			<h3>Tue, 23 Jan 2024 20:23:35 UTC</h3>
+			<p>A cottage industry around documenting the happenings in Starbase has sprung up, with channels all over the world broadcasting the Starship IFT-2 live:</p>
+<ul>
+<li><a href="https://youtube.com/@NASASpaceflight">NASASpaceflight</a></li>
+<li><a href="https://youtube.com/@SENKRECHTSTARTER">SENKRECHTSTARTER</a></li>
+<li><a href="https://youtube.com/@AstroTim">AstroTim</a></li>
+<li><a href="https://youtube.com/@SpaceOrbit">SpaceOrbit</a></li>
+<li><a href="https://youtube.com/@UFOTINIK">UFOTINIK</a></li>
+<li><a href="https://youtube.com/@hugouniquement">HugoUniquement</a></li>
+<li><a href="https://youtube.com/@UzayCagindaYolculuk">UzayCagindaYolculuk</a></li>
+<li><a href="https://youtube.com/@user-yv1tc2dq9e">劳伦斯玩推特(海派新闻秀)</a></li>
+<li><a href="https://youtube.com/@link4universe">link4universe</a></li>
+<li><a href="https://youtube.com/@PassioneAstronomia">PassioneAstronomia</a></li>
+<li><a href="https://youtube.com/@ControldeMision">ControldeMision</a></li>
+</ul>
+<h2>Launch summary</h2>
+<ul>
+<li>All engines functional</li>
+<li>No debris or damage to launch pad</li>
+<li>Stage separation achieved</li>
+<li>Flight termination system stopped the second stage before it went into orbit</li>
+</ul>
+<h2>Thoughts</h2>
+<p>It's pretty crazy that people complain about the termination of the booster, done by the flight termination system or not, when before SpaceX, all rockets were doomed to fall into the ocean or explode. Only after they proved reusability that people started to act like this, which is ridiculous because they are using this new paradigm as a base to attack the company and it's status as the GOAT¹ of spaceflight.</p>
+<p>¹. Greatest Of All Time</p>
+<p>SpaceX has inadvertently created the expectations and goal posts that it's detractors are using to bash it.</p>
 
-			
-				<div class="bubble">blog</div>	
-			
+			<div class="tags">
+				
+					<div class="pill">blog</div>	
+				
+					<div class="pill">space</div>	
+				
+			</div>
 		</article>
 	</main>
   </body>
@@ -78,7 +106,6 @@
 	bannerAddIcons(screenWidth, 4, header)
 
 	let update = () => {
-		console.log("resize!")
 
 		let screenWidth = window.screen.width
 		while(header.firstChild) {

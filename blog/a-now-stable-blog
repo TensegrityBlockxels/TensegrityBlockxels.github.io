@@ -2,29 +2,29 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title></title>
+	<title>A now stable blog</title>
 	<link rel="stylesheet" href="/styles/style.css"/>
   </head>
   <body>
   	<header id="bannerContainer">
 	</header>
-	<main>
-		<h1>Subscribe</h1>
-<h3>RSS</h3>
-<ul>
-	<li><a href="/feed.xml">Blog RSS</a></li>
-	<li><a href="/projects.xml">Project RSS</a></li>
-</ul>
-<h3>JSON Feed</h3>
-<ul>
-	<li><a href="/feed.json">Blog JSON Feed</a></li>
-	<li><a href="/projects.json">Project JSON Feed</a></li>
-</ul>
+	<main class="post">
+		<article>
+			<h1>A now stable blog</h1>
+			<h3>Tue, 23 Jan 2024 20:23:35 UTC</h3>
+			<p>After many attempts with Svelte and Astro, I finally settled for a blog made with eleventyjs.</p>
 
-
+			<div class="tags">
+				
+					<div class="pill">blog</div>	
+				
+					<div class="pill">tech</div>	
+				
+			</div>
+		</article>
 	</main>
   </body>
-  
+	
 <script defer>
 	//js
 	let size = 64
@@ -109,27 +109,5 @@
 	window.onresize = timeout;
 </script>
 
-  <script defer>
-	let projectsDiv = document.getElementById('projects')
-
-	const response = fetch('https://api.github.com/users/TensegrityBlockxels/repos').then(response => response.json()).then(data => {
-		for (const [key, value] of Object.entries(data)) {
-		  const project = value
-		  let projectTemplate = `<li><div class="card">
-	<h2><a href="urlx">namex</a></h2>
-	<span>descriptionx</span>
-</div></li>`
-		  projectTemplate = projectTemplate.replace("urlx", project.html_url)
-		  projectTemplate = projectTemplate.replace("namex", project.name)
-		  projectTemplate = projectTemplate.replace("descriptionx", project.description)
-
-		  projectsDiv.insertAdjacentHTML('beforeend', projectTemplate)
-
-		}
-	})
-</script>
-
-
 </html>
-
 

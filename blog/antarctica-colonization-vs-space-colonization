@@ -2,29 +2,34 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title></title>
+	<title>Antarctica colonization vs Space colonization</title>
 	<link rel="stylesheet" href="/styles/style.css"/>
   </head>
   <body>
   	<header id="bannerContainer">
 	</header>
-	<main>
-		<h1>Subscribe</h1>
-<h3>RSS</h3>
-<ul>
-	<li><a href="/feed.xml">Blog RSS</a></li>
-	<li><a href="/projects.xml">Project RSS</a></li>
-</ul>
-<h3>JSON Feed</h3>
-<ul>
-	<li><a href="/feed.json">Blog JSON Feed</a></li>
-	<li><a href="/projects.json">Project JSON Feed</a></li>
-</ul>
+	<main class="post">
+		<article>
+			<h1>Antarctica colonization vs Space colonization</h1>
+			<h3>Tue, 23 Jan 2024 20:23:35 UTC</h3>
+			<p>Many make the point that, given the overall disinterest in colonizing the Antartic, space colonization is not going to be as prominent as envisioned. However consider that:</p>
+<ol>
+<li>Antarctica, by the time that colonization became an option, was already understood as a delicate ecosystem, and that any disruption there had negative implications for the global climate.</li>
+<li>In the UN, it was decided that it was the reserved patrimony of humankind.</li>
+<li>The land didn't have any economic potential.</li>
+</ol>
 
-
+			<div class="tags">
+				
+					<div class="pill">blog</div>	
+				
+					<div class="pill">space</div>	
+				
+			</div>
+		</article>
 	</main>
   </body>
-  
+	
 <script defer>
 	//js
 	let size = 64
@@ -109,27 +114,5 @@
 	window.onresize = timeout;
 </script>
 
-  <script defer>
-	let projectsDiv = document.getElementById('projects')
-
-	const response = fetch('https://api.github.com/users/TensegrityBlockxels/repos').then(response => response.json()).then(data => {
-		for (const [key, value] of Object.entries(data)) {
-		  const project = value
-		  let projectTemplate = `<li><div class="card">
-	<h2><a href="urlx">namex</a></h2>
-	<span>descriptionx</span>
-</div></li>`
-		  projectTemplate = projectTemplate.replace("urlx", project.html_url)
-		  projectTemplate = projectTemplate.replace("namex", project.name)
-		  projectTemplate = projectTemplate.replace("descriptionx", project.description)
-
-		  projectsDiv.insertAdjacentHTML('beforeend', projectTemplate)
-
-		}
-	})
-</script>
-
-
 </html>
-
 
