@@ -11,7 +11,7 @@
 	<main class="post">
 		<article>
 			<h1>A now stable blog</h1>
-			<h3>Tue, 23 Jan 2024 20:23:35 UTC</h3>
+			<h3>Sat, 08 Mar 2025 15:31:54 UTC</h3>
 			<p>After many attempts with Svelte and Astro, I finally settled for a blog made with eleventyjs.</p>
 
 			<div class="tags">
